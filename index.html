@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gautam Pai</title>
+  <script src="theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+    </svg>
+    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+    </svg>
+  </button>
+  <nav>
+    <div class="nav-item">
+      <a class="nav-link active" href="index.html">Home</a>
+    </div>
+    <div class="nav-item">
+      <span class="nav-link">
+        Research
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="research-overview.html">Overview</a>
+        <a href="research-publications.html">Publications</a>
+        <a href="research-theses.html">Theses and Book Chapters</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="https://people.utwente.nl/g.pai?tab=education" target="_blank">Teaching</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="https://people.utwente.nl/g.pai?tab=contact" target="_blank">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="home-main">
+  <div class="home-hero">
+    <div class="home-grid">
+      <div class="bio">
+        <h1>Gautam Pai</h1>
+        <p>
+          I am an Assistant Professor (UD) in the
+          <a href="https://www.utwente.nl/en/eemcs/mia/">Mathematics of Imaging &amp; AI group</a>
+          in the
+          <a href="https://www.utwente.nl/en/eemcs/damut/">Department of Applied Mathematics</a>
+          at the University of Twente, Netherlands.
+        </p>
+        <p>
+          My research interests broadly span different aspects of geometry in computer vision and machine learning.
+          I am particularly interested in the applications of spectral and metric geometry for shape analysis,
+          unsupervised learning, and image processing. You can find some topics of my current interests in
+          <a href="research-overview.html">Overview</a>
+          and my papers with links to all details in
+          <a href="research-publications.html">Publications</a>.
+        </p>
+        <p>
+          Previously, I was a postdoctoral researcher at
+          <a href="https://www.lix.polytechnique.fr/geovic/index.html">Ecole Polytechnique - Paris</a>,
+          and at <a href="https://casa.win.tue.nl/home/">TU/e - Eindhoven</a>,
+          and did my PhD at <a href="https://www.cs.technion.ac.il/">Technion - Haifa</a>.
+        </p>
+      </div>
+      <div class="photo-col">
+        <img
+          class="profile-photo"
+          src="images/profile-photo.jpg"
+          alt="Gautam Pai"
+          onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';"
+        />
+        <div id="photo-placeholder" class="profile-photo" style="display:none;">
+          [photo]
+        </div>
+        <div class="profile-emails">
+          <a class="email-link ut-email" href="mailto:g.pai@utwente.nl">
+            <img class="email-logo" src="images/ut-logo.png" alt="University of Twente logo" />
+            <span>g.pai@utwente.nl</span>
+          </a>
+          <a class="email-link gmail-email" href="mailto:gautamppai89@gmail.com">
+            <img class="email-logo" src="images/gmail-logo.webp" alt="Gmail logo" />
+            <span>gautamppai89@gmail.com</span>
+          </a>
+        </div>
+        <div class="profile-socials">
+          <a class="social-link" href="https://drive.google.com/file/d/1LTG8eKt4ypjEeMJtHFYPdJ2V-RWbWGQe/view?usp=sharing" target="_blank" aria-label="CV">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </a>
+          <a class="social-link" href="https://scholar.google.co.il/citations?user=weJ9q1UAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+            <img class="social-logo" src="images/Google_Scholar_logo.svg.png" alt="Google Scholar logo" />
+          </a>
+          <a class="social-link" href="https://github.com/paigautam" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12A11.5 11.5 0 0 0 8.36 22.93c.58.1.79-.25.79-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.76 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.26 1.18-3.06-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.17A10.9 10.9 0 0 1 12 6.03c.97 0 1.95.13 2.86.38 2.2-1.48 3.17-1.17 3.17-1.17.62 1.59.23 2.76.11 3.05.74.8 1.18 1.81 1.18 3.06 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.04.78 2.1v3.11c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a class="social-link" href="https://il.linkedin.com/in/gautam-pai-351a2b62" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.96 1.96 0 1 0 5.3 6.92 1.96 1.96 0 0 0 5.25 3ZM20.44 12.73c0-3.45-1.84-5.05-4.3-5.05-1.98 0-2.87 1.09-3.36 1.85V8.5H9.4c.04.68 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.12-.92.27-.68.87-1.38 1.88-1.38 1.33 0 1.86 1.02 1.86 2.52V20h3.38v-7.27Z"/></svg>
+          </a>
+          <a class="social-link" href="https://twitter.com/gautampai89" target="_blank" aria-label="Twitter or X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.26l-4.9-7.43L5.53 22H2.42l7.24-8.27L1.8 2h6.42l4.43 6.73L18.9 2Zm-1.1 18h1.73L7.26 3.9H5.4L17.8 20Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="news-section">
+    <h2 class="news-title">News</h2>
+    <ul class="news-list">
+      <li>
+        <span class="news-date">Feb 2026</span>
+        <span class="news-text">I will be on the Organising Committee of <a href="https://www.tue.nl/en/our-university/calendar-and-events/06-06-2027-ssvm-2027?_gl=1*hk6ox2*_up*MQ..*_ga*NDU4ODE3NTIyLjE3NzM2NjI0ODY.*_ga_JN37M497TT*czE3NzM2NjI0ODYkbzEkZzEkdDE3NzM2NjI0OTEkajU1JGwwJGgw" target="_blank">SSVM 2027</a>
+          (to be held in the Netherlands!) Please find all updates <a href="https://www.tue.nl/en/our-university/calendar-and-events/06-06-2027-ssvm-2027?_gl=1*hk6ox2*_up*MQ..*_ga*NDU4ODE3NTIyLjE3NzM2NjI0ODY.*_ga_JN37M497TT*czE3NzM2NjI0ODYkbzEkZzEkdDE3NzM2NjI0OTEkajU1JGwwJGgw" target="_blank">here</a></span>
+      </li>
+      <li>
+        <span class="news-date">Jan 2026</span>
+        <span class="news-text">I had a short collaborative visit at <a href="https://casa.win.tue.nl/home/geometric-learning-and-differential-geometry/" target="_blank">GLDG</a> group at TU-Eindhoven</span>
+      </li>
+      <li>
+        <span class="news-date">Oct 2025</span>
+        <span class="news-text">I gave a tutorial on <em>Functional Maps: A Flexible Representation for Maps between Surfaces</em>
+          at the PhD Networking <a href="https://aimath.nl/index.php/2025/08/27/phd-event/" target="_blank">event</a> of <a href="https://aimath.nl/" target="_blank">AI &amp; Mathematics (AIM)</a></span>
+      </li>
+      <li>
+        <span class="news-date">Oct 2025</span>
+        <span class="news-text">I will be at the Grant Matchmaking <a href="https://aimath.nl/index.php/2025/08/27/matchmaking-grant-incubator-meeting/" target="_blank">event</a> of <a href="https://aimath.nl/" target="_blank">AIM</a> at CWI Amsterdam</span>
+      </li>
+      <li>
+        <span class="news-date">Jun 2025</span>
+        <span class="news-text">I will be giving a talk at the conference on <a href="https://sites.google.com/view/srgb/home/4" target="_blank">Sub-Riemannian Geometry and Beyond IV</a> held at Schwarzsee (Fribourg, Switzerland)</span>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Gautam Pai &nbsp;·&nbsp; University of Twente &nbsp;·&nbsp;
+  <a href="https://github.com/paigautam" target="_blank">GitHub</a>
+</footer>
+
+</body>
+</html>

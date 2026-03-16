@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Overview | Gautam Pai</title>
+  <script src="theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+    </svg>
+    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+    </svg>
+  </button>
+  <nav>
+    <div class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </div>
+    <div class="nav-item">
+      <span class="nav-link active">
+        Research
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="research-overview.html">Overview</a>
+        <a href="research-publications.html">Publications</a>
+        <a href="research-theses.html">Theses and Book Chapters</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="https://people.utwente.nl/g.pai?tab=education" target="_blank">Teaching</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="https://people.utwente.nl/g.pai?tab=contact" target="_blank">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="overview-hero">
+    <h1 class="overview-headline">Overview</h1>
+    <p class="overview-intro">
+      My research is centered around Geometry, Numerical Methods, and Machine Learning. I develop solutions for
+      computational problems for different geometric modalities: images, groups, graphs, and discrete
+      representations of geometric shapes like 3D meshes and point clouds. My current focus is on the following
+      broad (and in many cases intersecting) themes described below. You can find a more precise personal
+      statement on these topics <a href="documents/research_summary.pdf" target="_blank">here</a>.
+    </p>
+  </section>
+
+  <section class="overview-feature">
+    <div class="overview-copy">
+      <h2>Computational Optimal Transport on Geometric Domains</h2>
+      <p>
+        Mathematical tools from Optimal Transport provide a meaningful distance between probability distributions
+        (e.g. the Wasserstein Distance). In terms of real-world applications, this has led to impressive results in
+        shape interpolation, generative models, matching pointsets, and solving PDE's. Despite a demanding
+        computational bottleneck, recent advances allow for computationally tractable numerical methods to estimate
+        the transport and associated distances - typically on Euclidean (flat) domains.
+      </p>
+      <div class="overview-media-float">
+        <img src="images/ot-digit.gif" alt="Optimal transport digit animation" />
+        <img src="images/ot-flow.gif" alt="Optimal transport flow animation" />
+      </div>
+      <p>
+        It is interesting and useful to develop these methods for more challenging geometries - grids, groups, and
+        graphs, especially for non-trivial intrinsic metrics. Some important questions that enable solutions in this
+        direction are:
+      </p>
+      <p class="overview-question">How to compute and/or approximate distances on a manifold?</p>
+      <p class="overview-question">How to efficiently solve PDE's (e.g. diffusion equation) on a manifold?</p>
+      <p class="overview-question">How to encode geometric data (e.g. images/shapes/learned features) as probability measures?</p>
+    </div>
+  </section>
+
+  <section class="overview-feature overview-feature-reverse">
+    <div class="overview-copy">
+      <h2>Machine Learning for Numerical Geometry</h2>
+      <p>
+        Numerical geometry comprises mathematically grounded methods that utilize theoretical inputs from geometry,
+        partial differential equations (PDEs), and numerical analysis, for tackling various computational problems
+        in data science. In direct comparison, advances in deep learning exhibit a black-box nature where essential
+        features are learned purely from training data examples with remarkable results across different training
+        paradigms (supervised, unsupervised, self-supervised, etc).
+      </p>
+      <div class="overview-media-float overview-media-stack">
+        <img src="images/ml-ot.png" alt="Machine learning for numerical geometry visual" />
+        <img src="images/ml-ot2.png" alt="Machine learning for numerical geometry secondary visual" />
+      </div>
+      <p>
+        However, some important factors that are generally not well understood and/or documented are: data and
+        compute efficiency, interpretability, and adversarial robustness. Therefore, it is valuable to analyze and
+        quantify these aspects for different applications and build holistic models that can combine the best of
+        both worlds. Some research topics along this direction:
+      </p>
+      <p class="overview-question">Integrate different PDEs (typically inspired from physics and neuroscience) into neural networks and analyze their performance empirically and mathematically.</p>
+      <p class="overview-question">Endowing neural feature spaces with varying degrees of geometric structure (symmetries, metric preservation) to make them more meaningful and efficient</p>
+    </div>
+  </section>
+
+  <section class="overview-feature">
+    <div class="overview-copy">
+      <h2>Shape Analysis</h2>
+      <p>
+        Geometric Shapes exist in various forms and complexities: from one-dimensional curves, or two-dimensional
+        surfaces to higher-dimensional geometries (manifolds), with important applications like computer graphics
+        and medical imaging. However, working with discrete representations of shapes in practice (like meshes and
+        point-clouds) involves facing considerable challenges like: noise &amp; sampling, partiality &amp; occlusion,
+        rigid and non-rigid deformations, etc.
+      </p>
+      <div class="overview-media-float overview-media-stack">
+        <img src="images/partial-fmap.png" alt="Partial functional maps visual" />
+      </div>
+      <p>
+        It is therefore desirable to construct shape features that are invariant or equivariant to these
+        deformations. Tools from Geometric Deep-Learning (GDL) are currently the popular techniques for addressing
+        these issues and some topics of interest include:
+      </p>
+      <p class="overview-question">Exploring different tools for shape comparison like distances, intrinsic differential operators, and kernel methods that can be learned from diverse datasets with meaningful GDL architectures</p>
+      <p class="overview-question">Fast Approximation of Spectral Methods for Manifold Learning and Geometric Data Analysis</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Gautam Pai &nbsp;·&nbsp; University of Twente &nbsp;·&nbsp;
+  <a href="https://github.com/paigautam" target="_blank">GitHub</a>
+</footer>
+
+</body>
+</html>
