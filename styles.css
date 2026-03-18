@@ -394,6 +394,14 @@ h2.page-title {
 
 .pub-list { display: flex; flex-direction: column; gap: 2.5rem; }
 
+.pub-section + .pub-section {
+  margin-top: 4rem;
+}
+
+.pub-section-title {
+  margin-bottom: 2rem;
+}
+
 .pub-item {
   display: grid;
   grid-template-columns: 260px 1fr;
