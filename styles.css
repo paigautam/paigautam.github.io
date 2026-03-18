@@ -728,8 +728,7 @@ html[data-theme="dark"] .pub-venue .award {
 
   .home-grid { grid-template-columns: 1fr; }
   .photo-col { order: -1; flex-direction: column; align-items: flex-start; }
-  .profile-photo { width: 100px; height: 100px; }
-  .icon-links,
+  .profile-photo { width: 140px; height: 140px; }  .icon-links,
   .profile-emails { justify-content: flex-start; align-items: flex-start; }
   .email-link { max-width: none; }
   .home-main .bio h1 { text-align: left; }
